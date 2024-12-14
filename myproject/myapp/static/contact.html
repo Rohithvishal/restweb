@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand - Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to bottom, #eef2f3, #8ec5fc);
+      color: #333;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 50px;
+      border-radius: 5px;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      margin: 0 15px;
+      transition: color 0.3s ease, transform 0.2s ease;
+      font-size: 1rem;
+    }
+
+    header nav a:hover {
+      color: #ff9800;
+      transform: translateY(-2px);
+    }
+
+    /* Contact Banner Section */
+    .contact-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://source.unsplash.com/1600x600/?city,contact') no-repeat center center/cover;
+      color: white;
+      height: 400px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+
+    .contact-banner h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #ffd700;
+    }
+
+    /* Contact Section - Form and Details */
+    .contact-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 20px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .contact-details,
+    .contact-form {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+
+    /* Contact Info Styling */
+    .contact-details h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #333;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+    }
+
+    .contact-details p {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Contact Form */
+    .contact-form h2 {
+      font-size: 1.8rem;
+      color: #333;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      height: 120px;
+    }
+
+    .contact-form button {
+      background: #ff9800;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      width: 100%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #e67e22;
+    }
+
+    /* Footer Section */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff9800;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header nav a {
+        font-size: 0.9rem;
+      }
+
+      .contact-form,
+      .contact-details {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-banner h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <img src="https://via.placeholder.com/50" alt="Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <!-- Contact Banner Section -->
+  <div class="contact-banner">
+    <h1>Contact Us</h1>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-details">
+      <h2>Our Address</h2>
+      <p><strong>Address:</strong> Grand, Chennai, Tamil Nadu, India</p>
+      <p><strong>Phone:</strong> +91 9342561326</p>
+      <p><strong>Email:</strong> Grand@gmail.com</p>
+      <p><strong>Hours:</strong> Mon - Sun: 24/7</p>
+    </div>
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
+  <footer>
+    designed by,Rohith[24000942]
+  </footer>
+</body>
